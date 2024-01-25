@@ -1,0 +1,43 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --mainColor: rgb(246, 65, 55);
+  --textColor: #b9b9bb;
+  --iconBg: #2e2e32;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-three-cols {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.grid-three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-four-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.section {
+  padding: 5rem 10rem;
+}
+.jc-between {
+  justify-content: space-between;
+}
+
+.d-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
