@@ -44,12 +44,13 @@ html {
 }
 
 .main-container,
-.header {
+.header,
+.sideBar-container {
   max-width: 1440px;
 }
 
 .section {
-  padding: 0 5rem;
+  padding: 0 3rem;
 }
 
 .container .section {
@@ -59,11 +60,21 @@ html {
 .d-flex {
   display: flex;
 }
+.dir-col {
+  flex-direction: column;
+}
 .jc-between {
   justify-content: space-between;
 }
 .jc-center {
   justify-content: center;
+}
+
+.jc-end {
+  justify-content: end;
+}
+.jc-start {
+  justify-content: start;
 }
 
 .al-center {
@@ -103,15 +114,27 @@ html {
 .h-100 {
   height: 100%;
 }
+
+.d-none {
+  display: none;
+}
+
+.overflow-h {
+  overflow: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
 .angle-down {
   border: 1px solid #fff;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .angle-down i {
@@ -133,10 +156,13 @@ html {
   font-size: 1rem;
   letter-spacing: 3px;
 }
-
-.menu-item:nth-of-type(3):hover .live-btn {
+.link-wrapper:nth-of-type(3):hover > a .live-btn {
   background-color: var(--mainColor);
   color: #fff;
+}
+
+.navbar > a {
+  border: 1px solid red;
 }
 
 .menu-item {
@@ -160,23 +186,39 @@ html {
 }
 .header {
   background-color: #000;
-  height: 10rem;
+  height: 8rem;
 }
 
+/*?==== toggle btns styling ====*/
+
+.toggle-btn,
+.search-icon-wrapper {
+  color: #fff;
+  font-size: 2rem;
+}
 .searchBar input {
   font-size: 1.8rem;
   background-color: transparent;
   padding: 0.5rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+/*?==== sideBar container styling ====*/
 
-.logo {
-  width: 6rem;
-}
-
-.navbar a {
+.sideBar-container {
+  top: 100%;
+  left: 0%;
+  background-color: red;
   color: #fff;
+  width: 100%;
+  height: calc(100vh - 8rem);
 }
+.sideBar-links {
+  padding: 4rem 2rem;
+  background-color: yellow;
+  gap: 1.5rem;
+}
+
+/*?==== mix styling ====*/
 
 .searchBar,
 .navbar,
@@ -185,4 +227,72 @@ html {
   font-size: 1.8rem;
   font-weight: 600;
   color: #fff;
+}
+.logo {
+  width: 6rem;
+}
+/*?==== subMenu links styling ====*/
+
+.navbar a {
+  color: #fff;
+  display: inline-block;
+}
+
+.link-wrapper > a {
+  padding: 1.5rem 1rem;
+  border: 5px solid transparent;
+}
+
+.show > a {
+  border-color: #186dee;
+}
+
+.show > a i {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
+
+.link-wrapper .subMenu {
+  top: 100%;
+  right: 0%;
+  background-color: black;
+  width: 300px;
+  height: 500px;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  z-index: -1;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  visibility: hidden;
+}
+
+.show .subMenu {
+  visibility: visible;
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+}
+
+.subMenu-heading h2 {
+  gap: 3rem;
+}
+
+.subMenu-heading h2 i {
+  font-size: 1.3rem;
+  background-color: var(--mainColor);
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }

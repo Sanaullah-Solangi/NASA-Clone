@@ -31,20 +31,47 @@
   <body>
     <!--!=============== header section starts ===============-->
     <div class="header-container">
-      <header class="header section m-auto d-flex al-center jc-between">
+      <header
+        class="header section p-relative m-auto d-flex al-center jc-between"
+      >
         <!--todo====== item one ======-->
-        <div class="searchBar d-flex jc-between al-center">
+        <div class="toggle-btn pointer d-none">
+          <i class="fa-solid fa-bars menu-bar d-none"></i>
+          <i class="fa-solid fa-xmark cancel-btn d-none"></i>
+        </div>
+        <!--todo====== item two ======-->
+        <div class="searchBar pointer d-flex jc-between al-center">
+          <!--?=== side Bar btn ===-->
           <div class="sideBar-btn h-100 al-center d-flex">
             <span class="header-tag txt-cap">explore</span>
             <div class="angle-down d-flex jc-center al-center">
               <i class="fa-solid fa-angle-down"></i>
             </div>
           </div>
+          <!--?=== search Bar ===-->
           <input placeholder="Search..." type="search" name="searchBar" />
+          <!--?=== side bar ===-->
+          <div class="sideBar-container p-absolute grid grid-four-cols">
+            <!--todo=== col one ===-->
+            <div class="col-one sideBar-links d-flex jc-start dir-col">
+              <a href="#" class="txt-cap">home</a>
+              <a href="#" class="txt-cap">missions</a>
+              <a href="#" class="txt-cap">humans in space</a>
+              <a href="#" class="txt-cap">earth & climate</a>
+              <a href="#" class="txt-cap">the solar system</a>
+              <a href="#" class="txt-cap">the universe</a>
+              <a href="#" class="txt-cap">science</a>
+              <a href="#" class="txt-cap">aeronautics</a>
+              <a href="#" class="txt-cap">technology</a>
+              <a href="#" class="txt-cap">learning resources</a>
+              <a href="#" class="txt-cap">about NASA</a>
+              <a href="#" class="txt-cap">espanol</a>
+            </div>
+          </div>
         </div>
 
-        <!--todo====== item two ======-->
-        <div class="logo">
+        <!--todo====== item three ======-->
+        <div class="logo pointer">
           <img
             src="./assests/images/nasa-logo.svg"
             alt="This is NASA logo"
@@ -52,22 +79,112 @@
           />
         </div>
 
-        <!--todo====== item three ======-->
-        <nav class="navbar d-flex jc-center al-center">
+        <!--todo====== item four ======-->
+        <nav class="navbar h-100 d-flex jc-center al-center">
           <!--?=== menu one ===-->
-          <a href="#" class="menu-item d-flex jc-center al-center txt-cap"
-            >news & events <i class="fa-solid fa-angle-down drop-down"></i
-          ></a>
-          <!--?=== menu two ===-->
-          <a href="#" class="menu-item d-flex jc-center al-center txt-cap"
-            >multimedia <i class="fa-solid fa-angle-down drop-down"></i
-          ></a>
-          <!--?=== menu three ===-->
-          <a href="#" class="menu-item d-flex jc-center al-center txt-cap"
-            >NASA+ <span class="transition-3 live-btn txt-up">live</span></a
+          <div
+            class="link-wrapper wrapper-one transition-3 d-flex al-center jc-center h-100 p-relative"
           >
+            <a href="#" class="menu-item d-flex jc-center al-center txt-cap"
+              >news & events
+              <i class="transition-3 fa-solid fa-angle-down"></i>
+              <!--!======== sub menu ========-->
+              <div
+                class="subMenu transition-3 overflow-h p-absolute d-flex dir-col jc-center al-right"
+              >
+                <!--todo=== subMenu heading ===-->
+                <div class="subMenu-heading">
+                  <h2 class="txt-cap d-flex al-center jc-start">
+                    news & events
+                    <i
+                      class="fa-solid fa-arrow-right al-center jc-center d-flex"
+                    ></i>
+                  </h2>
+                </div>
+                <!--todo=== subMenu items ===-->
+                <!--?=== item one ===-->
+                <a href="#" class="txt-cap subMenu-item">all NASA news</a>
+                <!--?=== item two ===-->
+                <a href="#" class="txt-cap subMenu-item"
+                  >video series on NASA+</a
+                >
+                <!--?=== item three ===-->
+                <a href="#" class="txt-cap subMenu-item">podcasts</a>
+                <!--?=== item four ===-->
+                <a href="#" class="txt-cap subMenu-item">blogs</a>
+                <!--?=== item five ===-->
+                <a href="#" class="txt-cap subMenu-item">newsletters</a>
+                <!--?=== item six ===-->
+                <a href="#" class="txt-cap subMenu-item">social media</a>
+                <!--?=== item seven ===-->
+                <a href="#" class="txt-cap subMenu-item">media resources</a>
+                <!--?=== item eight ===-->
+                <a href="#" class="txt-cap subMenu-item"
+                  >upcomong lauches & landings</a
+                >
+                <!--?=== item nine ===-->
+                <a href="#" class="txt-cap subMenu-item">virtual events</a>
+              </div></a
+            >
+          </div>
+
+          <!--?=== menu two ===-->
+          <div
+            class="link-wrapper wrapper-two d-flex al-center jc-center h-100 p-relative"
+          >
+            <a href="#" class="menu-item d-flex jc-center al-center txt-cap"
+              >multimedia
+              <i class="transition-3 fa-solid fa-angle-down"></i>
+              <!--!======== sub menu ========-->
+              <div
+                class="subMenu transition-3 overflow-h p-absolute d-flex dir-col jc-center al-right"
+              >
+                <!--todo=== subMenu heading ===-->
+                <div class="subMenu-heading">
+                  <h2 class="txt-cap d-flex al-center jc-start">
+                    multimedia
+                    <i
+                      class="fa-solid fa-arrow-right al-center jc-center d-flex"
+                    ></i>
+                  </h2>
+                </div>
+                <!--todo=== subMenu items ===-->
+                <!--?=== item one ===-->
+                <a href="#" class="txt-cap subMenu-item">NASA+</a>
+                <!--?=== item two ===-->
+                <a href="#" class="txt-cap subMenu-item">Images</a>
+                <!--?=== item three ===-->
+                <a href="#" class="txt-cap subMenu-item">NASA TV</a>
+                <!--?=== item four ===-->
+                <a href="#" class="txt-cap subMenu-item"
+                  >sounds and Ringtones</a
+                >
+                <!--?=== item five ===-->
+                <a href="#" class="txt-cap subMenu-item">interactives</a>
+                <!--?=== item six ===-->
+                <a href="#" class="txt-cap subMenu-item">NASA Apps</a>
+                <!--?=== item seven ===-->
+                <a href="#" class="txt-cap subMenu-item">podcasts</a>
+                <!--?=== item eight ===-->
+                <a href="#" class="txt-cap subMenu-item">e-Books</a>
+                <!--?=== item nine ===-->
+                <a href="#" class="txt-cap subMenu-item">STEM Multimedia</a>
+              </div></a
+            >
+          </div>
+          <!--?=== menu three ===-->
+          <div class="link-wrapper d-flex h-100 jc-center al-center">
+            <a href="#" class="menu-item txt-cap"
+              >NASA+ <span class="transition-3 live-btn txt-up">live</span></a
+            >
+          </div>
         </nav>
+        <!--todo====== item five ======-->
+        <div class="search-icon-wrapper d-none">
+          <i class="fa-solid fa-magnifying-glass search-btn"></i>
+        </div>
       </header>
     </div>
+    <script src="./assests/app.js"></script>
   </body>
 </html>

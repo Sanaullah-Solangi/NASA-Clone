@@ -1,0 +1,19 @@
+@media (width <= 1130px) {
+  .toggle-btn,
+  .search-icon-wrapper,
+  .menu-bar {
+    display: block;
+  }
+
+  .navbar,
+  .searchBar {
+    display: none;
+  }
+
+  .show .menu-bar {
+    display: none;
+  }
+  .show .cancel-btn {
+    display: block;
+  }
+}
