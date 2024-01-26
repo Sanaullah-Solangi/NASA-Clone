@@ -11,8 +11,17 @@
   --mainColor: rgb(246, 65, 55);
   --textColor: #b9b9bb;
   --iconBg: #2e2e32;
+  --bg-gradient: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) 30%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
 }
 
+.box {
+  width: 500px;
+  height: 100vh;
+}
 .grid {
   display: grid;
 }
@@ -29,6 +38,11 @@
 .grid-four-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+
+.main-container {
+  max-width: 1440px;
+}
+
 .section {
   padding: 5rem 10rem;
 }
@@ -40,4 +54,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.txt-center {
+  text-align: center;
+}
+.txt-cap {
+  text-transform: capitalize;
+}
+.txt-up {
+  text-transform: uppercase;
+}
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  content: "";
+  position: absolute;
 }
