@@ -18,6 +18,10 @@
   );
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .box {
   width: 500px;
   height: 100vh;
@@ -39,15 +43,31 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-.main-container {
+.main-container,
+.header {
   max-width: 1440px;
 }
 
 .section {
-  padding: 5rem 10rem;
+  padding: 0 5rem;
+}
+
+.container .section {
+  padding: 2rem 5rem;
+}
+
+.d-flex {
+  display: flex;
 }
 .jc-between {
   justify-content: space-between;
+}
+.jc-center {
+  justify-content: center;
+}
+
+.al-center {
+  align-items: center;
 }
 
 .d-center {
@@ -71,4 +91,98 @@
 .p-absolute {
   content: "";
   position: absolute;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+.angle-down {
+  border: 1px solid #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.angle-down i {
+  font-size: 0.8rem;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.drop-down {
+  font-size: 1.5rem;
+  margin-left: 0.7rem;
+}
+
+.live-btn {
+  padding: 0.3rem;
+  border: 1px solid var(--mainColor);
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+.menu-item:nth-of-type(3):hover .live-btn {
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+.menu-item {
+  gap: 1rem;
+}
+
+.transition-3 {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+/*!================= header styling =================*/
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header {
+  background-color: #000;
+  height: 10rem;
+}
+
+.searchBar input {
+  font-size: 1.8rem;
+  background-color: transparent;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+  width: 6rem;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.searchBar,
+.navbar,
+.sideBar-btn {
+  gap: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
 }

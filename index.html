@@ -31,26 +31,41 @@
   <body>
     <!--!=============== header section starts ===============-->
     <div class="header-container">
-      <header class="header m-auto d-flex jc-between">
-        <!--todo=== item one ===-->
-        <div class="searchBar">
-          <div class="sideBar-btn">
+      <header class="header section m-auto d-flex al-center jc-between">
+        <!--todo====== item one ======-->
+        <div class="searchBar d-flex jc-between al-center">
+          <div class="sideBar-btn h-100 al-center d-flex">
             <span class="header-tag txt-cap">explore</span>
-            <i class="fa-solid fa-angle-down"></i>
+            <div class="angle-down d-flex jc-center al-center">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
           </div>
-          <input type="search" name="searchBar" />
+          <input placeholder="Search..." type="search" name="searchBar" />
         </div>
 
-        <!--todo=== item two ===-->
-        <div class="nasa-logo">
-          <img src="./assests/images/nasa-logo.svg" alt="This is NASA logo" />
+        <!--todo====== item two ======-->
+        <div class="logo">
+          <img
+            src="./assests/images/nasa-logo.svg"
+            alt="This is NASA logo"
+            width="100%"
+          />
         </div>
 
-        <!--todo=== item three ===-->
-        <nav class="navbar">
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+        <!--todo====== item three ======-->
+        <nav class="navbar d-flex jc-center al-center">
+          <!--?=== menu one ===-->
+          <a href="#" class="menu-item d-flex jc-center al-center txt-cap"
+            >news & events <i class="fa-solid fa-angle-down drop-down"></i
+          ></a>
+          <!--?=== menu two ===-->
+          <a href="#" class="menu-item d-flex jc-center al-center txt-cap"
+            >multimedia <i class="fa-solid fa-angle-down drop-down"></i
+          ></a>
+          <!--?=== menu three ===-->
+          <a href="#" class="menu-item d-flex jc-center al-center txt-cap"
+            >NASA+ <span class="transition-3 live-btn txt-up">live</span></a
+          >
         </nav>
       </header>
     </div>
