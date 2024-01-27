@@ -22,10 +22,10 @@ html {
   font-size: 62.5%;
 }
 
-.box {
-  width: 500px;
-  height: 100vh;
+a {
+  color: white;
 }
+
 .grid {
   display: grid;
 }
@@ -207,23 +207,61 @@ html {
 .sideBar-container {
   top: 100%;
   left: 0%;
-  background-color: red;
+  background-color: black;
   color: #fff;
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: calc(95vh - 8rem);
 }
 
 /**=== sideBar links ===*/
 
-.sideBar-links {
+.sideBar-links,
+.sideBar-feature {
   padding: 4rem 2rem;
-  background-color: yellow;
+}
+.sideBar-links {
   gap: 1.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /**==== sideBar Images ====*/
 .sideBar-feature {
+  gap: 2rem;
+}
+
+.sideBar-img {
+  padding-top: 4rem;
+  height: 30rem;
+}
+
+.sideBar-feature-tag {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+}
+
+.sideBar-feature p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.sideBar-bedge {
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.sideBar-bedge .bedge-wrapper {
   border: 1px solid white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.sideBar-bedge i {
+  font-size: 0.7rem;
 }
 /*?==== mix styling ====*/
 
