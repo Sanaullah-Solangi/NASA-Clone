@@ -212,12 +212,19 @@ html {
   width: 100%;
   height: calc(100vh - 8rem);
 }
+
+/**=== sideBar links ===*/
+
 .sideBar-links {
   padding: 4rem 2rem;
   background-color: yellow;
   gap: 1.5rem;
 }
 
+/**==== sideBar Images ====*/
+.sideBar-feature {
+  border: 1px solid white;
+}
 /*?==== mix styling ====*/
 
 .searchBar,
