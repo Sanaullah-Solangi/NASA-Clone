@@ -2,12 +2,13 @@
 let header = document.querySelector(".header");
 let searchBar = document.querySelector(".sideBar-btn");
 let menuBar = document.querySelector(".menu-bar");
+let toggleBtn = document.querySelector(".toggle-btn");
 console.log(menuBar);
 searchBar.addEventListener("click", () => {
   header.classList.toggle("show-sideBar");
 });
 
-menuBar.addEventListener("click", () => {
+toggleBtn.addEventListener("click", () => {
   header.classList.toggle("show-sideBar");
 });
 

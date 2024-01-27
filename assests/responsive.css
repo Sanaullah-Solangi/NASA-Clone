@@ -10,10 +10,10 @@
     display: none;
   }
 
-  .show .menu-bar {
+  .show-sideBar .menu-bar {
     display: none;
   }
-  .show .cancel-btn {
+  .show-sideBar .cancel-btn {
     display: block;
   }
 }
