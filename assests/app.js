@@ -1,6 +1,16 @@
-//!================= header search Bar =================
-var searchBar = document.querySelector(".sideBar-btn");
-console.log(searchBar);
+//!================= header side Bar =================
+let header = document.querySelector(".header");
+let searchBar = document.querySelector(".sideBar-btn");
+let menuBar = document.querySelector(".menu-bar");
+console.log(menuBar);
+searchBar.addEventListener("click", () => {
+  header.classList.toggle("show-sideBar");
+});
+
+menuBar.addEventListener("click", () => {
+  header.classList.toggle("show-sideBar");
+});
+
 //!================= header Sub Menu =================
 let linkWrapper = document.querySelectorAll(".link-wrapper");
 let subMenu = document.querySelector(".subMenu");
