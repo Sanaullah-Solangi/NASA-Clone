@@ -62,6 +62,21 @@
   }
 }
 
+@media (width<=980px) {
+  .slide-content .slide-heading {
+    line-height: 6rem;
+  }
+}
+@media (width <= 900px) {
+  .slide-content {
+    margin-top: 0rem;
+  }
+
+  .slide-content .slide-heading {
+    font-size: 4rem;
+  }
+}
+
 @media (width <= 800px) {
   .sideBar-feature {
     display: none;
@@ -118,5 +133,8 @@
 @media (width <= 650px) {
   .slide-content :is(.slide-heading, .slide-description) {
     width: 100%;
+  }
+  .slide-content .slide-heading {
+    line-height: 5rem;
   }
 }
