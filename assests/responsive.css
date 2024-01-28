@@ -96,7 +96,7 @@
 }
 @media (width <= 900px) {
   .container .section {
-    padding: 3rem;
+    padding: 3rem 1.5rem;
   }
   .container .hero-section {
     padding: 2rem;
