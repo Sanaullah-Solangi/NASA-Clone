@@ -84,6 +84,9 @@
   .internship-content :is(h2, p) {
     width: 100%;
   }
+  .day-container {
+    grid-template-columns: 1fr;
+  }
 }
 @media (width <= 1030px) {
   .featured-news-heading {
@@ -95,6 +98,9 @@
 @media (width<=980px) {
   .slide-content .slide-heading {
     line-height: 6rem;
+  }
+  .day-content h2 {
+    font-size: 2.9rem;
   }
 }
 @media (width <= 900px) {
@@ -168,6 +174,9 @@
     margin-top: 2.5rem;
     gap: 1.5rem;
   }
+  .day-img {
+    order: -1;
+  }
 }
 
 @media (width <= 650px) {
@@ -200,8 +209,15 @@
     font-size: 4rem;
     line-height: 4rem;
   }
-  .internship-content .internship-btn{
+  .internship-content .internship-btn {
     font-size: 2rem;
+  }
+  .day-dbl-1 {
+    display: none;
+  }
+
+  .day-dbl-2 {
+    display: block;
   }
 }
 

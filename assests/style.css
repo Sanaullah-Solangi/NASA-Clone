@@ -11,11 +11,7 @@
   --mainColor: rgb(216, 57, 51);
   --textColor: #b9b9bb;
   --iconBg: #2e2e32;
-  --bg-gradient: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.1) 100%
-  );
+  --bg-gradient: linear-gradient(40deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
 }
 
 html {
@@ -33,8 +29,8 @@ a {
 .grid-two-cols {
   grid-template-columns: repeat(2, 1fr);
 }
-.grid-wide-three-cols {
-  grid-template-columns: 2fr 1fr 1fr;
+.grid-wide-two-cols {
+  grid-template-columns: 1fr 2fr;
 }
 .grid-three-cols {
   grid-template-columns: repeat(3, 1fr);
@@ -414,12 +410,7 @@ a {
 }
 
 .layer-img img {
-  transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .layer {
@@ -509,7 +500,8 @@ a {
   gap: 0.7rem;
 }
 
-:is(.slide-feature-item, .featured-news-heading, .internship-content) p i {
+:is(.slide-feature-item, .featured-news-heading, .internship-content) p i,
+.day-bedge i {
   color: #fff;
   background-color: var(--mainColor);
   font-size: 1.1rem;
@@ -634,13 +626,14 @@ a {
   font-size: 1.5rem;
   font-weight: 550;
 }
+/*!================= insternship section styling =================*/
 
 .internship-container {
   color: #fff;
-  height: 70rem;
+  height: 80rem;
 }
 .internship-content {
-  padding-top: 20rem;
+  padding-top: 30rem;
 }
 
 .internship-content p {
@@ -654,4 +647,37 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   width: fit-content;
   padding: 1rem 0 2rem;
+}
+
+/*!================= insternship section styling =================*/
+.day-container {
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.day-content h2,
+.day-img h2 {
+  font-size: 4rem;
+  margin: 2rem 0 4rem;
+}
+.day-sub-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.day-description {
+  margin: 2rem 0 3rem;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+}
+.day-bedge {
+  gap: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.day-bedge i {
+  rotate: 0deg;
+}
+.day-img {
+  overflow: hidden;
 }
