@@ -52,9 +52,6 @@ a {
 .section {
   padding: 0 3rem;
 }
-.container {
-  margin-top: 8rem;
-}
 
 .container .section {
   padding: 5rem 3rem;
@@ -154,12 +151,7 @@ a {
 }
 
 /*!================= header styling =================*/
-.header-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
+
 .header {
   background-color: #000;
   height: 8rem;
@@ -541,7 +533,7 @@ a {
   -webkit-filter: brightness(0.8);
 }
 /*!================= features styling =================*/
-
+/*?=== featured news heading ===*/
 .featured-news-heading h2 {
   font-size: 4.5rem;
 }
@@ -550,6 +542,8 @@ a {
   font-size: 2.2rem;
   letter-spacing: 0px;
 }
+
+/*?=== featured news content styling ===*/
 
 .featured-news-content {
   gap: 2rem;
@@ -601,3 +595,5 @@ a {
   font-weight: bold;
   margin-top: 1rem;
 }
+
+/*?=== featured news tags styling ===*/
