@@ -81,6 +81,9 @@
   .featured-tag-item {
     margin-bottom: 4rem;
   }
+  .internship-content :is(h2, p) {
+    width: 100%;
+  }
 }
 @media (width <= 1030px) {
   .featured-news-heading {
@@ -192,6 +195,13 @@
   }
   .featured-news-tags {
     grid-template-columns: 1fr;
+  }
+  .internship-content h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .internship-content .internship-btn{
+    font-size: 2rem;
   }
 }
 
