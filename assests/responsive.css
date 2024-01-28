@@ -88,6 +88,9 @@
   .special-container {
     grid-template-columns: 1fr;
   }
+  .special-video iframe {
+    height: 40rem;
+  }
 }
 @media (width <= 1030px) {
   .featured-news-heading {
