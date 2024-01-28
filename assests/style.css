@@ -192,7 +192,7 @@ a {
   height: calc(100vh - 6rem);
   opacity: 0%;
   visibility: hidden;
-  z-index: -2;
+  z-index: 5;
 }
 
 .show-sideBar .sideBar-container {
@@ -206,10 +206,10 @@ a {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .angle-down i {
@@ -218,10 +218,10 @@ a {
 
 .show-sideBar .angle-down i {
   transform: rotateX(180deg);
-  -webkit-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  -ms-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
 }
 /**=== sideBar links ===*/
 
@@ -241,10 +241,10 @@ a {
   width: 0.2rem;
   height: 90%;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
 }
 
 .sideBar-links > a {
@@ -258,10 +258,10 @@ a {
 
 .sideBar-links > a i {
   transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
 }
 /**==== sideBar Images ====*/
 .sideBar-feature {
@@ -297,10 +297,10 @@ a {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .sideBar-bedge i {
@@ -342,10 +342,10 @@ a {
 
 .show > a i {
   transform: rotateX(180deg);
-  -webkit-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  -ms-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
 }
 
 .link-wrapper .subMenu {
@@ -356,22 +356,22 @@ a {
   height: 500px;
   padding: 3rem 2rem;
   gap: 2rem;
-  z-index: -1;
+  z-index: 6;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
   visibility: hidden;
 }
 
 .show .subMenu {
   visibility: visible;
   transform: translateY(0%);
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  -o-transform: translateY(0%);
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
 }
 
 .subMenu-heading h2 {
@@ -384,14 +384,14 @@ a {
   width: 2.3rem;
   height: 2.3rem;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 /*!================= hero styling =================*/
 .main-container {
-  z-index: -4;
+  z-index: -1;
 }
 
 .feature-btn-wrapper .slide-feature-item {
@@ -480,6 +480,10 @@ a {
   width: 90%;
   height: 0.2rem;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.slide-mobile-btn {
+  padding: 0rem;
 }
 
 .slide-mobile-btn::after {
