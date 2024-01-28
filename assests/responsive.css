@@ -72,6 +72,9 @@
   }
 }
 @media (width <= 900px) {
+  .container .section {
+    padding: 2rem;
+  }
   .slide-content .slide-heading {
     font-size: 4rem;
   }
@@ -127,6 +130,14 @@
     width: 90%;
     height: 0.2rem;
     background-color: rgba(255, 255, 255, 0.2);
+  }
+  .slide-feature-item span {
+    font-size: 1.4rem;
+  }
+
+  .slide-feature-item p {
+    margin-top: 3rem;
+    gap: 1.5rem;
   }
 }
 
