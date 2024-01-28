@@ -84,7 +84,8 @@
   .internship-content :is(h2, p) {
     width: 100%;
   }
-  .day-container {
+  .day-container,
+  .special-container {
     grid-template-columns: 1fr;
   }
 }
@@ -99,7 +100,7 @@
   .slide-content .slide-heading {
     line-height: 6rem;
   }
-  .day-content h2 {
+  :is(.day-content, .special-content) h2 {
     font-size: 2.9rem;
   }
 }

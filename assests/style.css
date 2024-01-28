@@ -501,7 +501,7 @@ a {
 }
 
 :is(.slide-feature-item, .featured-news-heading, .internship-content) p i,
-.day-bedge i {
+:is(.day-bedge, .special-bedge) i {
   color: #fff;
   background-color: var(--mainColor);
   font-size: 1.1rem;
@@ -650,13 +650,12 @@ a {
 }
 
 /*!================= insternship section styling =================*/
-.day-container {
+.day-container,
+.special-container {
   gap: 4rem;
   margin-top: 3rem;
 }
-
-.day-content h2,
-.day-img h2 {
+:is(.day-content, .day-img, .special-content) h2 {
   font-size: 4rem;
   margin: 2rem 0 4rem;
 }
@@ -665,19 +664,26 @@ a {
   font-weight: bold;
 }
 
-.day-description {
+.day-description,
+.special-description {
   margin: 2rem 0 3rem;
   font-size: 1.6rem;
   line-height: 2.7rem;
 }
-.day-bedge {
+.day-bedge,
+.special-bedge {
   gap: 2rem;
   font-size: 1.8rem;
   font-weight: 500;
 }
-.day-bedge i {
+:is(.day-bedge, .special-bedge) i {
   rotate: 0deg;
 }
 .day-img {
   overflow: hidden;
+}
+
+.special-container {
+  background-color: #000;
+  color: #fff;
 }
