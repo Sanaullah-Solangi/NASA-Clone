@@ -427,7 +427,8 @@ a {
 }
 
 .slide-content .slide-heading,
-.internship-heading {
+.internship-heading,
+.explore-heading {
   font-size: 7rem;
   line-height: 8rem;
   width: 40%;
@@ -500,8 +501,15 @@ a {
   gap: 0.7rem;
 }
 
-:is(.slide-feature-item, .featured-news-heading, .internship-content) p i,
-:is(.day-bedge, .special-bedge) i {
+:is(
+    .slide-feature-item,
+    .featured-news-heading,
+    .internship-content,
+    .explore-content
+  )
+  :is(p, button)
+  i,
+:is(.day-bedge, .special-bedge, .discover-sub-heading) i {
   color: #fff;
   background-color: var(--mainColor);
   font-size: 1.1rem;
@@ -632,10 +640,12 @@ a {
   color: #fff;
   height: 80rem;
 }
+.explore-container {
+  color: #fff;
+}
 .internship-content {
   padding-top: 30rem;
 }
-
 .internship-content p {
   line-height: 2.5rem;
   font-weight: 500;
@@ -649,7 +659,7 @@ a {
   padding: 1rem 0 2rem;
 }
 
-/*!================= insternship section styling =================*/
+/*!================= day section styling =================*/
 .day-container,
 .special-container {
   gap: 4rem;
@@ -676,7 +686,7 @@ a {
   font-size: 1.8rem;
   font-weight: 500;
 }
-:is(.day-bedge, .special-bedge) i {
+:is(.day-bedge, .special-bedge, .discover-sub-heading) i {
   rotate: 0deg;
 }
 .day-img {
@@ -686,4 +696,72 @@ a {
 .special-container {
   background-color: #000;
   color: #fff;
+}
+
+/*!================= insternship section styling =================*/
+
+.explore-container {
+  color: #fff;
+  height: auto;
+}
+.explore-content {
+  padding-top: 10rem;
+}
+
+.explore-heading {
+  font-size: 6rem;
+  line-height: 6rem;
+  width: 40%;
+}
+.explore-description {
+  margin: 3rem 0 0;
+}
+.explore-content p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0;
+  width: 40%;
+}
+
+.explore-content .explore-link {
+  margin: 1rem 0 0;
+  font-weight: 300;
+}
+
+.explore-link a {
+  text-decoration: underline dotted;
+}
+.explore-content .explore-btn {
+  font-size: 1.7rem;
+  gap: 2rem;
+  margin: 1rem 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  padding: 1rem 0 2rem;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+/*!================= discover section styling =================*/
+.discover-heading {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.discover-content {
+  gap: 1.5rem;
+  color: #fff;
+  margin-top: 3rem;
+}
+.discover-item {
+  height: 50rem;
+  align-items: end;
+  padding: 2rem;
+}
+.discover-sub-heading {
+  width: 100%;
+  height: fit-content;
+  font-size: 3rem;
+  font-weight: bold;
+  gap: 2rem;
 }
