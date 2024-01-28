@@ -169,6 +169,11 @@ a {
   height: 8rem;
 }
 
+.header-container,
+.header {
+  z-index: 9;
+}
+
 /*?==== toggle btns styling ====*/
 
 .toggle-btn,
@@ -258,10 +263,10 @@ a {
 
 .sideBar-links > a i {
   transform: rotate(270deg);
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
 }
 /**==== sideBar Images ====*/
 .sideBar-feature {
@@ -321,7 +326,10 @@ a {
 }
 /*?==== subMenu links styling ====*/
 
+
 .navbar a {
+  background-color: #000;
+  z-index: 999;
   color: #fff;
   display: inline-block;
 }
@@ -342,10 +350,10 @@ a {
 
 .show > a i {
   transform: rotateX(180deg);
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
 }
 
 .link-wrapper .subMenu {
@@ -358,20 +366,20 @@ a {
   gap: 2rem;
   z-index: 6;
   transform: translateY(-100%);
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
   visibility: hidden;
 }
 
 .show .subMenu {
   visibility: visible;
   transform: translateY(0%);
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
 }
 
 .subMenu-heading h2 {
