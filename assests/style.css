@@ -26,6 +26,10 @@ a {
   display: grid;
 }
 
+.grid-one-col {
+  grid-template-columns: 1fr;
+}
+
 .grid-two-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -37,6 +41,10 @@ a {
 }
 .grid-four-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-twelve-cols {
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .main-container,
@@ -148,6 +156,10 @@ a {
 
 .lb-box-shadow {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+li {
+  list-style: none;
 }
 
 /*!================= header styling =================*/
@@ -764,4 +776,26 @@ a {
   font-size: 3rem;
   font-weight: bold;
   gap: 2rem;
+}
+/*!================= footer section styling =================*/
+.footer-content {
+  flex-wrap: wrap;
+}
+
+.footer-col-one,
+.footer-col-two,
+.footer-col-three {
+  flex: 1 1 33.3%;
+}
+
+.footer-col-four,
+.footer-col-five {
+  flex: 1 1 100%;
+}
+.footer-list {
+  display: inline;
+}
+.footer-last-list {
+  gap: 2rem;
+  flex-wrap: wrap;
 }
