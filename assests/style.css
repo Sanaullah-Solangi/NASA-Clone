@@ -59,7 +59,7 @@ a {
 }
 
 .container .section {
-  padding: 5rem 7rem;
+  padding: 5rem 3rem;
 }
 
 .d-flex {
@@ -782,22 +782,36 @@ li {
 /*!================= footer section styling =================*/
 
 .footer-container {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+}
+
+.footer-logo img {
+  width: 8rem;
 }
 .footer-content {
   flex-wrap: wrap;
   gap: 3rem;
+  margin-top: 7rem;
+  padding-bottom: 5rem;
 }
 
 .footer-col-one,
-.footer-col-two,
-.footer-col-three {
+.footer-col-two {
   flex: 1 1 23.3%;
+}
+
+.footer-col-three {
+  flex: 1 1 10%;
 }
 
 .footer-col-four,
 .footer-col-five {
   flex: 1 1 100%;
+}
+
+.footer-col-four{
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 3rem;
 }
 .footer-list {
   display: inline;
@@ -810,9 +824,58 @@ li {
 .footer-col-one .footer-heading {
   font-size: 2.2rem;
 }
-.footer-col-one :is(.footer-description, .footer-mission, ) {
+.footer-col-one :is(.footer-description, .footer-mission, ),
+.footer-links-heading,
+.footer-col-four,
+.footer-col-five {
   color: var(--textColor);
 }
 .footer-description {
   margin: 2rem 0;
+  font-size: 1.4rem;
+}
+
+.footer-button {
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.footer-col-two {
+  gap: 3rem;
+}
+.footer-col-two .footer-menu ul li {
+  margin-bottom: 2rem;
+}
+
+.footer-links {
+  gap: 1rem;
+}
+
+.footer-links i {
+  background-color: rgb(46, 46, 50);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+}
+
+.social-description {
+  margin-bottom: 1rem;
+}
+
+.footer-col-four ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.last-list-value {
+  font-weight: bold;
+}
+
+.footer-last-list li {
+  gap: 1rem;
 }
