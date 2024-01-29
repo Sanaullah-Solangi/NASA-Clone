@@ -11,6 +11,7 @@
   --mainColor: rgb(216, 57, 51);
   --textColor: #b9b9bb;
   --iconBg: #2e2e32;
+  --footerPara: rgb(185, 185, 185);
   --bg-gradient: linear-gradient(40deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
 }
 
@@ -365,10 +366,10 @@ li {
   gap: 2rem;
   z-index: 6;
   transform: translateY(-100%);
-  -webkit-transform: ;
-  -moz-transform: ;
-  -ms-transform: ;
-  -o-transform: ;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
   visibility: hidden;
 }
 
@@ -519,9 +520,9 @@ li {
     .internship-content,
     .explore-content
   )
-  :is(p, button)
+  :is(p, button, )
   i,
-:is(.day-bedge, .special-bedge, .discover-sub-heading) i {
+:is(.day-bedge, .special-bedge, .discover-sub-heading, .footer-button) i {
   color: #fff;
   background-color: var(--mainColor);
   font-size: 1.1rem;
@@ -698,14 +699,15 @@ li {
   font-size: 1.8rem;
   font-weight: 500;
 }
-:is(.day-bedge, .special-bedge, .discover-sub-heading) i {
+:is(.day-bedge, .special-bedge, .discover-sub-heading, .footer-button) i {
   rotate: 0deg;
 }
 .day-img {
   overflow: hidden;
 }
 
-.special-container {
+.special-container,
+.footer-container {
   background-color: #000;
   color: #fff;
 }
@@ -778,14 +780,19 @@ li {
   gap: 2rem;
 }
 /*!================= footer section styling =================*/
+
+.footer-container {
+  font-size: 1.4rem;
+}
 .footer-content {
   flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .footer-col-one,
 .footer-col-two,
 .footer-col-three {
-  flex: 1 1 33.3%;
+  flex: 1 1 23.3%;
 }
 
 .footer-col-four,
@@ -798,4 +805,14 @@ li {
 .footer-last-list {
   gap: 2rem;
   flex-wrap: wrap;
+}
+
+.footer-col-one .footer-heading {
+  font-size: 2.2rem;
+}
+.footer-col-one :is(.footer-description, .footer-mission, ) {
+  color: var(--textColor);
+}
+.footer-description {
+  margin: 2rem 0;
 }
