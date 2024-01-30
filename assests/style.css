@@ -212,10 +212,10 @@ li {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .angle-down i {
@@ -224,10 +224,10 @@ li {
 
 .show-sideBar .angle-down i {
   transform: rotateX(180deg);
-  -webkit-transform: ;
-  -moz-transform: ;
-  -ms-transform: ;
-  -o-transform: ;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
 }
 /**=== sideBar links ===*/
 
@@ -247,10 +247,10 @@ li {
   width: 0.2rem;
   height: 90%;
   transform: translateY(-50%);
-  -webkit-transform: ;
-  -moz-transform: ;
-  -ms-transform: ;
-  -o-transform: ;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 .sideBar-links > a {
@@ -264,10 +264,10 @@ li {
 
 .sideBar-links > a i {
   transform: rotate(270deg);
-  -webkit-transform: ;
-  -moz-transform: ;
-  -ms-transform: ;
-  -o-transform: ;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
 }
 /**==== sideBar Images ====*/
 .sideBar-feature {
@@ -303,10 +303,10 @@ li {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .sideBar-bedge i {
@@ -350,10 +350,10 @@ li {
 
 .show > a i {
   transform: rotateX(180deg);
-  -webkit-transform: ;
-  -moz-transform: ;
-  -ms-transform: ;
-  -o-transform: ;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
 }
 
 .link-wrapper .subMenu {
@@ -376,10 +376,10 @@ li {
 .show .subMenu {
   visibility: visible;
   transform: translateY(0%);
-  -webkit-transform: ;
-  -moz-transform: ;
-  -ms-transform: ;
-  -o-transform: ;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
 }
 
 .subMenu-heading h2 {
@@ -392,10 +392,10 @@ li {
   width: 2.3rem;
   height: 2.3rem;
   border-radius: 50%;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 /*!================= hero styling =================*/
 .main-container {
@@ -628,10 +628,10 @@ li {
 .featured-tag-img,
 .featured-tag-img img {
   border-radius: 50%;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   object-fit: cover;
 }
 .featured-tag-content {
@@ -878,4 +878,42 @@ li {
 
 .footer-last-list li {
   gap: 1rem;
+}
+/*!================= drop up section styling =================*/
+@keyframes border-animation {
+  0%,
+  100% {
+    border-radius: 76% 24% 58% 42%/17% 76% 24% 83%;
+    -webkit-border-radius: 76% 24% 58% 42%/17% 76% 24% 83%;
+    -moz-border-radius: 76% 24% 58% 42%/17% 76% 24% 83%;
+    -ms-border-radius: 76% 24% 58% 42%/17% 76% 24% 83%;
+    -o-border-radius: 76% 24% 58% 42%/17% 76% 24% 83%;
+  }
+  50% {
+    border-radius: 30%70%70%30%/30%30%70%70%;
+    -webkit-border-radius: 30%70%70%30%/30%30%70%70%;
+    -moz-border-radius: 30%70%70%30%/30%30%70%70%;
+    -ms-border-radius: 30%70%70%30%/30%30%70%70%;
+    -o-border-radius: 30%70%70%30%/30%30%70%70%;
+    -webkit-border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  }
+}
+.drop-up {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+.drop-up a i {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  color: #fff;
+  display: flex;
+  background-color: var(--mainColor);
+  justify-content: center;
+  align-items: center;
+  animation-name: border-animation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2.5s;
 }
