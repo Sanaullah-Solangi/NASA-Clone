@@ -105,7 +105,7 @@
 
   .footer-col-one,
   .footer-col-two {
-    flex: 1 1 50%; 
+    flex: 1 1 50%;
   }
   .footer-col-three {
     flex: 1 1 20%;
@@ -274,6 +274,10 @@
   .footer-col-three,
   .footer-col-four {
     flex: 1 1 100%;
+  }
+  .footer-col-four ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
